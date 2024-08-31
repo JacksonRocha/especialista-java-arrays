@@ -7,7 +7,7 @@ public class ServicoDeCobranca {
     void pagar(Fatura fatura, String emailCobranca, String... emailsAdicionais) {
         Objects.requireNonNull(fatura, "Informe a fatura");
         Objects.requireNonNull(emailCobranca, "Informe um email");
-        
+
         System.out.printf("Fatura %d, no valor total de R$%.2f, foi paga!%n",
                 fatura.numero, fatura.valorTotal);
 
@@ -19,6 +19,6 @@ public class ServicoDeCobranca {
     }
 
     private void enviarNotificacao(Fatura fatura, String email) {
-        System.out.printf("Fatura %d enviada para %s%n", fatura.numero, email);
+        System.out.printf("Fatur %d enviada para %s%n", fatura.numero, email);
     }
 }
